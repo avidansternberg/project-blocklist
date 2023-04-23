@@ -3,6 +3,15 @@
 
 ## Changelog
 
+### 2023/04/23
+
+Adding new scam domains
+
+* fedified.com
+* combine.social
+* whomtofollow.com
+* grasserisen.de
+
 ### 2023/04/22
 
 Update hate-and-junk as well as abuse:
