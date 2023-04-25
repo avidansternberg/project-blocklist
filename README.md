@@ -3,6 +3,15 @@
 
 ## Changelog
 
+### 2023/04/25
+
+Adding new scam domains
+
+* bobbinsrobots.com
+* writing.exchange
+* mas.to
+* mstdn.social
+
 ### 2023/04/23
 
 Adding new scam domains
