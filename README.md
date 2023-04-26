@@ -3,6 +3,10 @@
 
 ## Changelog
 
+### 2023/04/26
+
+Adding new botnets
+
 ### 2023/04/25
 
 Adding new scam domains
