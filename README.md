@@ -3,9 +3,16 @@
 
 ## Changelog
 
+### 2023/05/09
+
+Adding more scam. It looks as if the German public media, which are financed by forced fees, are letting the cat out of the bag in the mastoverse and directly excluding paying citizens even before the instance has started properly ... Welcome to good old Germania.
+
+* ard.social
+* ndr.de
+
 ### 2023/04/26
 
-Add mor scam, hate, junk, abuse and malware domains
+Add more scam, hate, junk, abuse and malware domains
 
 ### 2023/04/26
 
