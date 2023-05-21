@@ -3,6 +3,10 @@
 
 ## Changelog
 
+### 2023/05/21
+
+Found more scam, hate, abuse and junk.
+
 ### 2023/05/09
 
 Adding more scam. It looks as if the German public media, which are financed by forced fees, are letting the cat out of the bag in the mastoverse and directly excluding paying citizens even before the instance has started properly ... Welcome to good old Germania.
