@@ -3,6 +3,10 @@
 
 ## Changelog
 
+### 2023/05/27
+
+Add more domains, which are classified as hate, abuse and scam.
+
 ### 2023/05/21
 
 Found more scam, hate, abuse and junk.
