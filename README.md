@@ -13,7 +13,7 @@ Adding the following domains to hate-and-junk:
 
 ### 2023/06/05
 
-More hate und junk domains.
+More hate and junk domains.
 
 ### 2023/05/27
 
