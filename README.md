@@ -3,6 +3,14 @@
 
 ## Changelog
 
+### 2023/06/06
+
+Adding the following domains to hate-and-junk:
+
+* dragonscave.space
+* libranet.de
+* social.coop
+
 ### 2023/06/05
 
 More hate und junk domains.
