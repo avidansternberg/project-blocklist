@@ -3,6 +3,14 @@
 
 ## Changelog
 
+### 2023/06/07
+
+Adding the following domains to hate-and-junk:
+
+* transqueer.club
+* citw.lgbt
+* social.zym.lol
+
 ### 2023/06/06
 
 Adding the following domains to hate-and-junk:
