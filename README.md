@@ -3,6 +3,16 @@
 
 ## Changelog
 
+### 2023/06/09
+
+Adding new hate-and-junk:
+
+* patatas.ca
+* saiyajin.space
+* zerojay.com
+* whitespashe.uk
+* woof.group
+
 ### 2023/06/07
 
 Adding the following domains to hate-and-junk:
