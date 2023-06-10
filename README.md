@@ -3,6 +3,15 @@
 
 ## Changelog
 
+### 2023/06/10
+
+Add more hate-and-junk, abuse and scam:
+
+* anarres.family
+* federation.cafe
+* foodhub-muenchen.social
+* tau-ceti.space
+
 ### 2023/06/09
 
 Adding new hate-and-junk:
