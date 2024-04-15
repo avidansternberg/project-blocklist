@@ -6,7 +6,9 @@
 ### 2024/04/15
 
 Add `smtp-abuse.v4.csv`. This list contains IP addresses that have become noticeable. For example, by testing
-credentials or sending suspicious user agents to a mail server.
+credentials or sending suspicious user agents to a mail server.  
+As this list is fairly new, and my honeypot has not yet collected that many IP addresses, it is to be expected that it
+will grow considerably.
 
 ### 2023/06/10
 
