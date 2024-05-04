@@ -1,13 +1,10 @@
 abtest.mistat.xiaomi.com
 abtest.mistat.intl.xiaomi.com
-account.xiaomi.com
 ad.mi.com
 ad.xiaomi.com
 ad1.xiaomi.com
 adinfo.ra1.xlmc.sec.miui.com
 analytics.ff.avast.sec.miui.com
-api.xiaomi.com
-api.account.xiaomi.com
 api.ad.xiaomi.com
 api.admob.xiaomi.com
 api.activity.browser.miui.com
@@ -15,7 +12,6 @@ api.activity.browser.intl.miui.com
 api.aurogon.intl.miui.com
 api.brs.intl.miui.com
 api.collect.data.intl.miui.com
-api.device.xiaomi.net
 api.hybrid.xiaomi.com
 api.hybrid.intl.xiaomi.com
 api.newsfeed.intl.miui.com
