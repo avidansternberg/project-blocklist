@@ -3,6 +3,10 @@
 
 ## Changelog
 
+### 2024/08/06
+
+Add `neofascism.csv`. This list contains domain names, which spread hate and lies in a fascist manner.
+
 ### 2024/04/15
 
 Add `smtp-abuse.v4.csv`. This list contains IP addresses that have become noticeable. For example, by testing
