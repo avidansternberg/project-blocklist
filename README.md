@@ -8,7 +8,7 @@
 Add `mein-mmo.de` to `scam`, `hate-and-junk` as well as `suspicious`, as they increasingly bash on Twitch streamer and
 thus demonstrably provide subjective reports instead of being objective, as one would expect from such sites. See their
 current drama with Shurjoka.  
-However, this has become the norm for German journalism, which has become a real piece of shit.  
+However, this has become the norm for German journalism, which has become a real piece of untrustable shit.  
 Due to their continuous attempt to stir up hatred against those who do not support the current loud idiology, they are
 also to be classified as `neofascism`.
 
