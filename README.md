@@ -3,6 +3,10 @@
 
 ## Changelog
 
+### 2024/09/22
+
+Reorganize into folders to get a better overview.
+
 ### 2024/09/12
 
 Add `mein-mmo.de` to `scam`, `hate-and-junk` as well as `suspicious`, as they increasingly bash on Twitch streamer and
