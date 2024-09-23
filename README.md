@@ -83,10 +83,7 @@ Adding more scam. It looks as if the German public media, which are financed by 
 
 ### 2023/04/26
 
-Add more scam, hate, junk, abuse and malware domains
-
-### 2023/04/26
-
+Adding more scam, hate, junk, abuse and malware domains
 Adding new botnets
 
 ### 2023/04/25
