@@ -25,16 +25,66 @@ This project provides curated blocklists for blocking various categories of unwa
 ├── domain_lists/     # Domain-based blocklists
 ├── ip_lists/         # IP-based blocklists (IPv4 & IPv6)
 ├── user_lists/       # User-based blocklists (Fediverse, Discord)
-├── example_usage/    # Example configurations
-│   └── rspamd/       # Rspamd email filter configs
-└── split.sh         # Script to split large IP lists
-```
-.
-├── domain_lists/     # Domain-based blocklists
-├── ip_lists/         # IP-based blocklists (IPv4 & IPv6)
-├── user_lists/       # User-based blocklists (Fediverse, Discord)
 └── example_usage/    # Example configurations
     └── rspamd/       # Rspamd email filter configs
+```
+
+### Domain Lists
+
+| File                        | Description                         |
+|-----------------------------|-------------------------------------|
+| `ads.csv`                   | General advertising domains         |
+| `abuse.csv`                 | Known abusive domains               |
+| `malware.csv`               | Malware distribution domains        |
+| `scam.csv`                  | Scam and fraud domains              |
+| `hate-and-junk.csv`         | Hate speech and problematic content |
+| `neofascism.csv`            | Fascist/extremist domains           |
+| `racism.csv`                | Racist domains                      |
+| `suspicious.csv`            | Suspicious domains                  |
+| `gambling.csv`              | Online gambling domains             |
+| `tracker.csv`               | General tracker domains             |
+| `spotify-ads.csv`           | Spotify ad domains                  |
+| `spotify-ads-tracking.csv`  | Spotify tracking domains            |
+| `mobile_tracker.csv`        | Mobile tracker domains              |
+| `whatsapp.csv`              | WhatsApp-related tracking           |
+| `tiktok.csv`                | TikTok tracking domains             |
+| `google-amp-hosts.csv`      | Google AMP tracking                 |
+| `xiaomi-ads.csv`            | Xiaomi ad/tracker domains           |
+| `avg-avast-data-mining.csv` | AVG/Avast data collection           |
+| `d3ward.csv`                | D3ward blocklist                    |
+| `domain_whitelist.csv`      | Whitelist for domains               |
+
+### IP Lists
+
+| File                   | Description                     |
+|------------------------|---------------------------------|
+| `abusive-ips.v4.csv`   | Abusive IPv4 addresses          |
+| `abusive-ips.v6.csv`   | Abusive IPv6 addresses          |
+| `smtp-abuse.v4.csv`    | SMTP abuse IPv4 (spam, testing) |
+| `smtp-abuse.v6.csv`    | SMTP abuse IPv6                 |
+| `server-tester.v4.csv` | Server testers IPv4             |
+| `server-tester.v6.csv` | Server testers IPv6             |
+| `mullvad.v4.csv`       | Mullvad VPN IPv4                |
+| `mullvad.v6.csv`       | Mullvad VPN IPv6                |
+| `archives.csv`         | Archived IP data                |
+
+### User Lists
+
+| File                       | Description            |
+|----------------------------|------------------------|
+| `toxic-fediverse-user.csv` | Toxic Fediverse users  |
+| `fedi-racist-user.csv`     | Racist Fediverse users |
+| `toxic-discord.csv`        | Toxic Discord users    |
+| `scam-mail.csv`            | Scam email addresses   |
+
+## Usage
+
+### Pi-hole
+
+Add the raw URLs to your Pi-hole blocklist:
+
+```text
+https://raw.githubusercontent.com/USER/PROJECT/branch/domain_lists/scam.csv
 ```
 
 ### AdGuard Home
