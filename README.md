@@ -1,129 +1,115 @@
+# Blocklist Project
 
-# piHole/AdGuard/IP Blocklists
+A collection of domain, IP, and user blocklists for Pi-hole, AdGuard, and other DNS-based ad/tracker blockers.
 
-## Changelog
+## Overview
 
-### 2024/09/22
+This project provides curated blocklists for blocking various categories of unwanted content:
 
-Reorganize into folders to get a better overview.
+- **Scam & Fraud**: Known scam domains and email addresses
+- **Hate & Junk**: Hate speech, harassment, and problematic communities
+- **Malware**: Known malware distribution domains
+- **Neofascism**: Fascist and extremist domains spreading hate
+- **Racism**: Racist domains and content
+- **Abuse**: Known abusive services and infrastructure
+- **Suspicious**: Suspicious domains requiring caution
+- **Tracking**: Various tracker domains (Spotify, mobile, WhatsApp, TikTok, etc.)
+- **Ads**: Advertising domains
+- **Gambling**: Online gambling domains
+- **IP Lists**: Known abusive IPs, SMTP abusers, server testers
 
-### 2024/09/12
+## Directory Structure
 
-Add `mein-mmo.de` to `scam`, `hate-and-junk` as well as `suspicious`, as they increasingly bash on Twitch streamer and
-thus demonstrably provide subjective reports instead of being objective, as one would expect from such sites. See their
-current drama with Shurjoka.  
-However, this has become the norm for German journalism, which has become a real piece of untrustable shit.  
-Due to their continuous attempt to stir up hatred against those who do not support the current loud idiology, they are
-also to be classified as `neofascism`.
+```text
+.
+├── domain_lists/     # Domain-based blocklists
+├── ip_lists/         # IP-based blocklists (IPv4 & IPv6)
+├── user_lists/       # User-based blocklists (Fediverse, Discord)
+├── example_usage/    # Example configurations
+│   └── rspamd/       # Rspamd email filter configs
+└── split.sh         # Script to split large IP lists
+```
 
-### 2024/08/06
+### Domain Lists
 
-Add `neofascism.csv`. This list contains domain names, which spread hate and lies in a fascist manner.
+| File                        | Description                         |
+|-----------------------------|-------------------------------------|
+| `ads.csv`                   | General advertising domains         |
+| `abuse.csv`                 | Known abusive domains               |
+| `malware.csv`               | Malware distribution domains        |
+| `scam.csv`                  | Scam and fraud domains              |
+| `hate-and-junk.csv`         | Hate speech and problematic content |
+| `neofascism.csv`            | Fascist/extremist domains           |
+| `racism.csv`                | Racist domains                      |
+| `suspicious.csv`            | Suspicious domains                  |
+| `gambling.csv`              | Online gambling domains             |
+| `tracker.csv`               | General tracker domains             |
+| `spotify-ads.csv`           | Spotify ad domains                  |
+| `spotify-ads-tracking.csv`  | Spotify tracking domains            |
+| `mobile_tracker.csv`        | Mobile tracker domains              |
+| `whatsapp.csv`              | WhatsApp-related tracking           |
+| `tiktok.csv`                | TikTok tracking domains             |
+| `google-amp-hosts.csv`      | Google AMP tracking                 |
+| `xiaomi-ads.csv`            | Xiaomi ad/tracker domains           |
+| `avg-avast-data-mining.csv` | AVG/Avast data collection           |
+| `d3ward.csv`                | D3ward blocklist                    |
+| `domain_whitelist.csv`      | Whitelist for domains               |
 
-### 2024/04/15
+### IP Lists
 
-Add `smtp-abuse.v4.csv`. This list contains IP addresses that have become noticeable. For example, by testing
-credentials or sending suspicious user agents to a mail server.  
-As this list is fairly new, and my honeypot has not yet collected that many IP addresses, it is to be expected that it
-will grow considerably.
+| File                   | Description                     |
+|------------------------|---------------------------------|
+| `abusive-ips.v4.csv`   | Abusive IPv4 addresses          |
+| `abusive-ips.v6.csv`   | Abusive IPv6 addresses          |
+| `smtp-abuse.v4.csv`    | SMTP abuse IPv4 (spam, testing) |
+| `smtp-abuse.v6.csv`    | SMTP abuse IPv6                 |
+| `server-tester.v4.csv` | Server testers IPv4             |
+| `server-tester.v6.csv` | Server testers IPv6             |
+| `mullvad.v4.csv`       | Mullvad VPN IPv4                |
+| `mullvad.v6.csv`       | Mullvad VPN IPv6                |
+| `archives.csv`         | Archived IP data                |
 
-### 2023/06/10
+### User Lists
 
-Add more hate-and-junk, abuse and scam:
+| File                       | Description            |
+|----------------------------|------------------------|
+| `toxic-fediverse-user.csv` | Toxic Fediverse users  |
+| `fedi-racist-user.csv`     | Racist Fediverse users |
+| `toxic-discord.csv`        | Toxic Discord users    |
+| `scam-mail.csv`            | Scam email addresses   |
 
-* anarres.family
-* federation.cafe
-* foodhub-muenchen.social
-* tau-ceti.space
+## Usage
 
-### 2023/06/09
+### Pi-hole
 
-Adding new hate-and-junk:
+Add the raw URLs to your Pi-hole blocklist:
 
-* patatas.ca
-* saiyajin.space
-* zerojay.com
-* whitespashe.uk
-* woof.group
+```text
+https://raw.githubusercontent.com/USER/PROJECT/branch/domain_lists/scam.csv
+```
 
-### 2023/06/07
+### AdGuard Home
 
-Adding the following domains to hate-and-junk:
+Use the same URL format in AdGuard Home's blocklist settings.
 
-* transqueer.club
-* citw.lgbt
-* social.zym.lol
+### Rspamd
 
-### 2023/06/06
+Example configurations are provided in `example_usage/rspamd/`. Copy the relevant config files to your Rspamd configuration directory.
 
-Adding the following domains to hate-and-junk:
+### DNS-Based Blockers
 
-* dragonscave.space
-* libranet.de
-* social.coop
+All CSV files can be used with any DNS-based blocker that accepts domain/IP lists.
 
-### 2023/06/05
+## File Format
 
-More hate and junk domains.
+- Domain lists: Plain domain names (one per line)
+- IP lists: IPv4/IPv6 addresses or CIDR ranges (one per line)
+- Some files include comments prefixed with `:` (e.g., `:127.0.0.7:[Sternberg] Blacklisted: Scam`)
 
-### 2023/05/27
+## Contributing
 
-Add more domains, which are classified as hate, abuse and scam.
+To add new entries:
 
-### 2023/05/21
-
-Found more scam, hate, abuse and junk.
-
-### 2023/05/09
-
-Adding more scam. It looks as if the German public media, which are financed by forced fees, are letting the cat out of the bag in the mastoverse and directly excluding paying citizens even before the instance has started properly ... Welcome to good old Germania.
-
-* ard.social
-* ndr.de
-
-### 2023/04/26
-
-Adding more scam, hate, junk, abuse and malware domains
-Adding new botnets
-
-### 2023/04/25
-
-Adding new scam domains
-
-* bobbinsrobots.com
-* writing.exchange
-* mas.to
-* mstdn.social
-
-### 2023/04/23
-
-Adding new scam domains
-
-* fedified.com
-* combine.social
-* whomtofollow.com
-* grasserisen.de
-
-### 2023/04/22
-
-Update hate-and-junk as well as abuse:
-
-* umbrellix.org
-* mastodonapp.uk
-
-### 2023/03/20
-
-Adding dzikawa. An "artist" who is willing to be corrupted and joins in with bullying and hate speech without flinching. Even long-time supporters are mercilessly bullied by her and her team. Categories: Malware, hate-and-junk, scam and abuse.
-Scam because there are very significant similarities, especially her Mononoke thing, to another artist and dzikawa's paintings look as if she traced them. Also adding stumpyfongo for similar reasons.
-
-Adding following domains to the categories abuse, scam and hate-and-junk:
-
-* artistmarciax.com
-* roiskinda.cool
-* digital.rooting.garden
-* rooting.garden
-* thebad.space
-
-### 2023/03/19
-
-First compiling from different sources. Cleanups and duplicate removals.
+1. Identify the appropriate category file in `domain_lists/`, `ip_lists/`, or `user_lists/`
+2. Add the domain/IP/user to the relevant file
+3. Follow the existing format
